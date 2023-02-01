@@ -90,7 +90,7 @@ function Home() {
   // ];
 
   const movies = moviesData.map((data, i) => {
-    const isLiked = likedMovies.some((movie) => movie === data.results.title);
+    const isLiked = likedMovies.some((movie) => movie === data.title);
     const posterUrl = `https://image.tmdb.org/t/p/original/${data.poster_path}`;
     return (
       <Movie
