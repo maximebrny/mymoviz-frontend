@@ -59,11 +59,7 @@ function Movie(props) {
       <div className={styles.textContainer}>
         <div>
           <span className={styles.name}>{props.title}</span>
-          <p className={styles.description}>
-            {props.overview.length > 250
-              ? `${props.overview.substring(0, 250)}...`
-              : props.overview}
-          </p>
+          <p className={styles.description}>{props.overview}</p>
         </div>
         <div className={styles.iconContainer}>
           <span className={styles.vote}>
