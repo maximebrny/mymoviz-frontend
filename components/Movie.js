@@ -74,7 +74,7 @@ function Movie(props) {
               onClick={() => handleWatchMovie()}
               style={videoIconStyle}
               className="watch"
-            />{" "}
+            />
             ({watchCount})
           </span>
           <span>
